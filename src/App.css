@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20 px;
+  text-align: justify;
+  background-color: black;
+  color: white;
+  
 }
 
 .App-logo {
