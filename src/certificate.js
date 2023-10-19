@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-
+//this function and other five function in used for fetching different data from the express server.
 export default function Certificate() {
    const [data, setdata] = useState([]); 
    const list = data.map((item) => 

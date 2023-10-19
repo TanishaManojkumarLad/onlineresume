@@ -24,7 +24,7 @@ function App() {
         Click to view any Information!!
         </div>
      
-      
+       {/* show details in rows that has Display function that accepts name and items prop. items here is function inported to show different details*/}
       <div style={{padding: 10, margin:5}}>
       <Container>
       <Row>
@@ -45,7 +45,7 @@ function App() {
   );
 }
 
-
+//  dispaly function has bootstrap style design used to create style for the given props.
 function Display(props) {
   const [open, setOpen] = useState(false);
   return (
