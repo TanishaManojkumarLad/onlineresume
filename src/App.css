@@ -1,13 +1,6 @@
 .App {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 20 px;
   text-align: justify;
-  background-color: black;
-  color: white;
-  
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-logo {
@@ -35,6 +28,80 @@
 .App-link {
   color: #61dafb;
 }
+.list{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 25px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  
+}
+.item-list{
+  flex: 1 1 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 15px;
+  opacity: 0; 
+  animation: fadeInUpItem 1s ease-in-out forwards;
+  
+}
+
+.container-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  animation: fadeInUp 1s ease-in-out;
+}
+.animated-text {
+  animation: slideIn 1s ease-in-out;
+}
+.animated-div-education{
+  
+  text-align: center;
+  line-height: 30px;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.animated-div-certification{
+  text-align: center;
+      line-height: 30px;
+      animation: slideInLeft 1s ease-in-out;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 @keyframes App-logo-spin {
   from {
@@ -42,5 +109,27 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpItem {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
